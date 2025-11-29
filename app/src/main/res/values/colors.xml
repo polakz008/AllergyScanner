@@ -1,9 +1,9 @@
 <resources>
-    <color name="teal">#2BAAA5</color>
-    <color name="dark_teal">#0F3A3A</color>
+    <color name="teal">#3EA9AC</color>
+    <color name="dark_teal">#003645</color>
     <color name="background_mint">#CFF6F1</color>
     <color name="card_light_gray">#ECECEC</color>
-    <color name="soft_yellow">#FFD24D</color>
+    <color name="soft_yellow">#F5C039</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
 </resources>
