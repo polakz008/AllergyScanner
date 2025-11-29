@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/background_mint">
 
-    <!-- Panel na cały ekran -->
     <LinearLayout
         android:id="@+id/panel"
         android:layout_width="match_parent"
@@ -14,7 +13,7 @@
         android:orientation="vertical"
         android:background="@drawable/bg_panel">
 
-        <!-- Header -->
+
         <TextView
             android:id="@+id/header"
             android:layout_width="match_parent"
@@ -29,7 +28,6 @@
             android:textSize="28sp"
             android:textStyle="bold" />
 
-        <!-- ScrollView wypełniający przestrzeń między header a przyciskami -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -45,7 +43,7 @@
                 android:orientation="vertical"/>
         </ScrollView>
 
-        <!-- Przyciski zawsze przy dole -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
