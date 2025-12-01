@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllergyScanner">
         <activity
+            android:name=".AlergensScanner"
+            android:exported="false" />
+        <activity
             android:name=".AllergensActivity"
             android:exported="false" />
         <activity
