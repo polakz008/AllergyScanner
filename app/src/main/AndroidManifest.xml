@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllergyScanner">
         <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
             android:name=".AlergensScanner"
             android:exported="false" />
         <activity
