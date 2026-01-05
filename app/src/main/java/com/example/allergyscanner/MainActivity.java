@@ -33,9 +33,16 @@ public class MainActivity extends AppCompatActivity {
                 openAllergensActivity();
             }
         });
+        Button scanButton = findViewById(R.id.btnScan);
+        scanButton.setOnClickListener(v -> openScanningActivity());
     }
     private void openAllergensActivity() {
         Intent intent = new Intent(this, AllergensActivity.class);
+        startActivity(intent);
+    }
+
+    private void openScanningActivity() {
+        Intent intent = new Intent(this, ScanningActivity.class);
         startActivity(intent);
     }
     //test jira
