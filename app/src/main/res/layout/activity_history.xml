@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_mint">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_header"
+        android:gravity="bottom|start"
+        android:paddingStart="20dp"
+        android:paddingBottom="30dp"
+        android:text="Historia"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- KARTA 1 -->
+            <include layout="@layout/item_history_card"/>
+
+            <!-- KARTA 2 -->
+            <include layout="@layout/item_history_card"/>
+
+            <!-- KARTA 3 -->
+            <include layout="@layout/item_history_card"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
