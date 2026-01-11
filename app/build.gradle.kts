@@ -51,4 +51,10 @@ dependencies {
     implementation("androidx.camera:camera-view:1.3.1")
     // ML Kit – skanowanie kodów kreskowych
     implementation("com.google.mlkit:barcode-scanning:17.2.0")
+    // Room Database
+    annotationProcessor ("androidx.room:room-compiler:2.6.1")
+    implementation ("androidx.room:room-runtime:2.6.1")
+    // API + JSON
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }
