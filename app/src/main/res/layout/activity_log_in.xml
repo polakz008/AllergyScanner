@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A0D8D0"
-    android:padding="32dp">
+    android:padding="32dp"
+    android:id="@+id/login">
 
     <ImageView
         android:id="@+id/ivLogo"
