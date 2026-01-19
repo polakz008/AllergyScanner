@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardHistory"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:minHeight="190dp"
-    android:layout_marginBottom="24dp"
-    android:orientation="horizontal"
-    android:paddingStart="24dp"
-    android:paddingEnd="24dp"
-    android:paddingTop="32dp"
-    android:paddingBottom="32dp"
-    android:gravity="center_vertical"
-    android:background="@drawable/bg_card_rounded">
-
-    <FrameLayout
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:background="@drawable/bg_label"/>
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:padding="16dp">
 
-        <TextView
-            android:text="Chleb pszenny"
-            android:textSize="23sp"
-            android:textStyle="bold"
-            android:textColor="#012e40"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <!-- IKONA PRODUKTU -->
+        <ImageView
+            android:id="@+id/ivProductIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_icon_circle_teal"
+            android:padding="12dp"
+            android:src="@drawable/ic_product"
+            android:contentDescription="Ikona produktu" />
 
-        <TextView
-            android:layout_marginTop="10dp"
-            android:text="Gluten"
-            android:textSize="17sp"
-            android:textColor="#012e40"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <!-- INFORMACJE O PRODUKCIE -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_marginTop="6dp"
-            android:text="Laktoza"
-            android:textSize="17sp"
-            android:textColor="#012e40"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvHistoryProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chleb pszenny"
+                android:textColor="#0D4D4D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/tvHistoryAllergens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Gluten\nLaktoza"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
     </LinearLayout>
-
-</LinearLayout>
+</androidx.cardview.widget.CardView>

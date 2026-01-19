@@ -20,26 +20,23 @@
         android:textSize="34sp"
         android:textStyle="bold"/>
 
-    <ScrollView
+    <!-- RecyclerView dla listy historii -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHistory"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:clipToPadding="false"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!-- KARTA 1 -->
-            <include layout="@layout/item_history_card"/>
-
-            <!-- KARTA 2 -->
-            <include layout="@layout/item_history_card"/>
-
-            <!-- KARTA 3 -->
-            <include layout="@layout/item_history_card"/>
-
-        </LinearLayout>
-    </ScrollView>
+    <!-- Komunikat gdy brak historii -->
+    <TextView
+        android:id="@+id/tvEmptyHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Brak historii skanowania"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        android:visibility="gone"/>
 
 </LinearLayout>

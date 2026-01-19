@@ -272,4 +272,4 @@ public class ScanningActivity extends AppCompatActivity {
         super.onResume();
         isScanning = true;
     }
-}-
+}
