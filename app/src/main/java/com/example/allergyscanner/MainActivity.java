@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openHistoryActivity() {
+    public void openHistoryActivity(View v) {
         Intent intent = new Intent(this, History.class);
         intent.putExtra("user_id", userId);
         startActivity(intent);
